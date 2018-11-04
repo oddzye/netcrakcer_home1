@@ -35,8 +35,31 @@
 			border-bottom: 57px solid transparent
 			right: -50px
 	&-days-return
+		position: relative
 		padding: 25px
 		background-color: #000
+		&:after
+			content: ''
+			position: absolute
+			border-top: 60px solid #000
+			border-left: 50px solid transparent	
+			border-bottom: 55px solid #000
+			left: -50px
+		&:before
+			content: ''
+			position: absolute
+			border-top: 60px solid #000
+			border-right: 50px solid transparent	
+			border-bottom: 55px solid #000
+			right: -50px
 	&-support
+		position: relative
 		padding: 20px 83px 20px 23px
 		background-color: #d9bf8f
+		&:before
+			content: ''
+			position: absolute
+			border-top: 56px solid transparent
+			border-right: 50px solid #d9bf8f	
+			border-bottom: 57px solid transparent
+			left: -50px
