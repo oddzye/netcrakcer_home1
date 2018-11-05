@@ -1,3 +1,20 @@
+.brands {
+  margin-bottom: 155px;
+}
+
+.brands-title {
+  margin-bottom: 120px;
+}
+
+.brands-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1290px;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
 @font-face {
   font-family: "Krinkes Decor PERSONAL USE";
   src: url("../fonts/Krinkes_Decor_PERSONAL_USE/KrinkesDecorPERSONAL.eot?") format("eot");
@@ -440,4 +457,66 @@ button {
 
 .handpicked-block4 {
   margin-bottom: 15px;
+}
+
+.summer-collection {
+  margin-bottom: 115px;
+}
+
+.summer-collection-title {
+  margin-bottom: 65px;
+}
+
+.summer-collection-wrap {
+  border: 1px solid #eaeaea;
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1290px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.summer-collection-block {
+  margin-bottom: 16px;
+}
+
+.brands {
+  margin-bottom: 155px;
+}
+
+.brands-title {
+  margin-bottom: 120px;
+}
+
+.brands-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1290px;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.customers-title {
+  margin-bottom: 62px;
+}
+
+.customers-wrap {
+  background: #fff url("../img/customers/customers-bg.jpg") center center no-repeat;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
