@@ -38,13 +38,76 @@ button {
   cursor: pointer;
 }
 
+.section-title_diamond_right {
+  border: 10px solid transparent;
+  border-bottom: 10px solid #d9bf8f;
+  position: relative;
+  width: 0;
+  height: 0;
+  left: 890px;
+  top: -55px;
+}
+
+.section-title_diamond_right:before {
+  position: absolute;
+  content: '';
+  right: -10px;
+  top: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #d9bf8f;
+  width: 0;
+  height: 0;
+}
+
 .section-title {
+  position: relative;
   width: 100%;
   text-align: center;
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 700;
   font-style: italic;
+}
+
+.section-title:before {
+  position: absolute;
+  top: 20px;
+  content: '';
+  right: 180px;
+  min-width: 300px;
+  border-top: 1px solid #eaeaea;
+  height: 1px;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  height: 1px;
+  left: 170px;
+  border-top: 1px solid #eaeaea;
+  min-width: 300px;
+}
+
+.section-title_diamond_left {
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #d9bf8f;
+  position: relative;
+  width: 0;
+  left: 530px;
+  top: -35px;
+}
+
+.section-title_diamond_left:before {
+  position: absolute;
+  content: '';
+  left: -10px;
+  top: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #d9bf8f;
+  width: 0;
+  height: 0;
 }
 
 .top-line {
@@ -331,17 +394,50 @@ button {
   left: -50px;
 }
 
+.handpicked {
+  margin-bottom: 103px;
+}
+
 .handpicked-title {
+  position: relative;
   margin-bottom: 69px;
+}
+
+.handpicked-wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  max-height: 825px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.handpicked-block {
   position: relative;
 }
 
-.handpicked-title_diamond_left {
+.handpicked-block-border {
   position: absolute;
-  width: 0;
-  width-height: 0;
-  width-border: 50px solid transparent;
-  width-border-bottom: 70px solid red;
-  width-position: relative;
-  width-top: -50px;
+  max-width: 411px;
+  top: 27px;
+  left: 24px;
+  right: 24px;
+  bottom: 32px;
+  border: 3px solid #ffffff;
+}
+
+.handpicked-block1 {
+  margin-bottom: 15px;
+}
+
+.handpicked-block4 {
+  margin-bottom: 15px;
 }

@@ -17,10 +17,62 @@ button
 	outline: none
 	cursor: pointer
 
+.section-title_diamond_right
+  border: 10px solid transparent
+  border-bottom: 10px solid #d9bf8f
+  position: relative
+  width: 0
+  height: 0
+  left: 890px 
+  top: -55px
+  &:before
+    position: absolute
+    content: ''
+    right: -10px
+    top: 10px
+    border: 10px solid transparent
+    border-top: 10px solid #d9bf8f
+    width: 0
+    height: 0  
+
 .section-title
+	position: relative
 	width: 100%
 	text-align: center
 	font-family: "Playfair Display"
 	font-size: 30px
 	font-weight: 700
 	font-style: italic
+	&:before
+		position: absolute
+		top: 20px
+		content: ''
+		right: 180px
+		min-width: 300px
+		border-top: 1px solid #eaeaea
+		height: 1px	  
+	&:after
+  	content: ''
+  	position: absolute
+  	top: 20px
+  	height: 1px
+  	left: 170px
+  	border-top: 1px solid #eaeaea
+  	min-width: 300px	
+	&_diamond_left
+    height: 0
+    border: 10px solid transparent
+    border-bottom: 10px solid #d9bf8f
+    position: relative
+    width: 0
+    left: 530px
+    top: -35px
+    &:before
+      position: absolute
+      content: ''
+      left: -10px
+      top: 10px
+      border: 10px solid transparent
+      border-top: 10px solid #d9bf8f
+      width: 0
+      height: 0
