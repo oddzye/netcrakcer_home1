@@ -27,9 +27,24 @@ a {
   justify-content: space-between;
 }
 
+.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 button {
   outline: none;
   cursor: pointer;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .top-line {
@@ -145,6 +160,47 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.main .container .sale-rect__wrap .sale-rect__up-to:before {
+  content: '';
+  position: absolute;
+  height: 7px;
+  border-top: 1px solid white;
+  top: 9px;
+  left: 25px;
+  width: 34px;
+}
+
+.main .container .sale-rect__wrap .sale-rect__up-to:after {
+  content: '';
+  position: absolute;
+  height: 7px;
+  border-top: 1px solid white;
+  top: 9px;
+  right: 25px;
+  width: 34px;
+}
+
+.main .container .sale-rect__wrap .sale-rect__up-to_decoration {
+  position: absolute;
+}
+
+.main .container .sale-rect__wrap .sale-rect__up-to_decoration_first-line {
+  bottom: 5px;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  border-top: 1px solid white;
+}
+
+.main .container .sale-rect__wrap .sale-rect__up-to_decoration_second-line {
+  bottom: 5px;
+  right: 0;
+  width: 60px;
+  height: 1px;
+  border-top: 1px solid white;
 }
 
 .main .container .sale-rect__wrap .sale-rect__procent-sale {
@@ -174,9 +230,12 @@ button {
 .advantages {
   color: #fff;
   font-family: 'Lato', sans-serif;
+  margin-bottom: 102px;
 }
 
 .advantages .container {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
@@ -270,4 +329,19 @@ button {
   border-right: 50px solid #d9bf8f;
   border-bottom: 57px solid transparent;
   left: -50px;
+}
+
+.handpicked-title {
+  margin-bottom: 69px;
+  position: relative;
+}
+
+.handpicked-title_diamond_left {
+  position: absolute;
+  width: 0;
+  width-height: 0;
+  width-border: 50px solid transparent;
+  width-border-bottom: 70px solid red;
+  width-position: relative;
+  width-top: -50px;
 }
