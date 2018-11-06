@@ -512,11 +512,91 @@ button {
 }
 
 .customers-wrap {
+  padding: 36px 49px;
   background: #fff url("../img/customers/customers-bg.jpg") center center no-repeat;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.customers-human {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customers-woman {
+  margin-left: 30px;
+}
+
+.men-img-wrap {
+  margin-right: 20px;
+}
+
+.men-text {
+  text-align: right;
+}
+
+.men-comment {
+  margin-top: 99px;
+  color: #ffffff;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30.16px;
+  max-width: 286px;
+  margin-bottom: 63px;
+}
+
+.men-name {
+  color: #000000;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 17.99px;
+  margin-bottom: 25px;
+}
+
+.men-position {
+  color: #7f7e7e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 29.98px;
+  text-transform: uppercase;
+}
+
+.woman-comment {
+  margin-top: 99px;
+  color: #ffffff;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30.16px;
+  max-width: 286px;
+  margin-bottom: 63px;
+}
+
+.woman-name {
+  color: #000000;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 17.99px;
+  margin-bottom: 25px;
+}
+
+.woman-position {
+  color: #7f7e7e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 29.98px;
+  text-transform: uppercase;
 }
