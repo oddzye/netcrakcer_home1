@@ -161,13 +161,13 @@ button {
 
 .top-line .social-media__block {
   margin-left: 100px;
-  color: #d9bf8f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .top-line .social-media__block__item {
+  color: #d9bf8f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,6 +182,12 @@ button {
   border: 2px solid #d9bf8f;
   border-radius: 20px;
   margin-right: 15px;
+}
+
+.top-line .social-media__block__item:hover {
+  cursor: pointer;
+  color: #000;
+  border-color: #000;
 }
 
 .top-line .choose-lang__list {
@@ -321,6 +327,10 @@ button {
   border: none;
 }
 
+.main .container .shop-button:hover {
+  background-color: #f09d50;
+}
+
 .advantages {
   color: #fff;
   font-family: 'Lato', sans-serif;
@@ -453,6 +463,16 @@ button {
 
 .handpicked-block {
   position: relative;
+  z-index: 2;
+}
+
+.handpicked-block:hover {
+  opacity: 0.68;
+  cursor: pointer;
+}
+
+.handpicked-block:hover .shop-button {
+  visibility: visible;
 }
 
 .handpicked-block-border {
@@ -471,6 +491,26 @@ button {
 
 .handpicked-block4 {
   margin-bottom: 15px;
+}
+
+.handpicked-block .shop-button {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  left-text-transform: uppercase;
+  max-width: 189px;
+  padding: 16px 30px;
+  background-color: #f09d66;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  border: none;
+  visibility: hidden;
+}
+
+.handpicked-block .shop-button:hover {
+  background-color: #f09d50;
 }
 
 .summer-collection {
@@ -635,11 +675,4 @@ button {
   font-weight: 700;
   line-height: 29.98px;
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 1275px) {
-  .handpicked-wrap {
-    -ms-flex-wrap: no-wrap;
-    flex-wrap: no-wrap;
-  }
 }
